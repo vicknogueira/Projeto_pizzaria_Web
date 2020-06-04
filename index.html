@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <title>Pizzaria</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg pb-4" style="background-color: #EE5A24; height: 150px;">
+        <a class="navbar-brand text-light" href="">Login</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active ml-5">
+                    <a class="nav-link text-light cursor-pointer" style="font-size: 20px;" href="index.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="nav-link text-light cursor-pointer" style="font-size: 20px;" href="Cardapio.html">Cardapio</a>
+                </li>
+
+            </ul>
+            <form class="form my-2 my-lg-0 d-flex justify-content-center">
+                <li class="nav-item w-100 mx-lg-3 mt-3 mt-lg-0 d-flex justify-content-center">
+                    <img src="assets/img/image 2.png" style="width: 146px; cursor: pointer;" alt="">
+                </li>
+                <li class="nav-item w-100 mr-lg-5 my-3 my-lg-0 d-flex justify-content-center">
+                    <img src="assets/img/image 1.png" style="cursor: pointer;"  alt="">
+                </li>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- Conteudo da pagina -->
+
+    <main class="container-fluid position-absolute main-container pt-5"
+        style="border-top-left-radius: 20px;border-top-right-radius: 20px;">
+
+        <!-- carousel -->
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner w-100">
+              <div class="carousel-item  p-5 justify-content-center active">
+                <img src="assets/img/image 5.png" class="ml-5 pl-3" alt="..." width="90%">
+              </div>
+              <div class="carousel-item p-5 justify-content-center">
+                <img src="assets/img/image 5.png" class="ml-5 pl-3" alt="..." width="90%">
+              </div>
+              <div class="carousel-item p-5 justify-content-center">
+                <img src="assets/img/image 5.png" class="ml-5 pl-3" style="width: 90%;" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <!-- Promoções de pizzas -->
+
+          <h1 class="text-center mb-5 mt-5">Promoções</h1>
+          <!-- Linha 1 de produtos -->
+          <div class="row mt-3">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/Rectangle 12.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="">Pizza 4 queijos</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/Rectangle 12 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="">Pizza de brocólis</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/Rectangle 12 (2).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="">Pizza de catupiry</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Linha 2 de produtos -->
+          <div class="row mt-5">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/Rectangle 12 (3).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="">Pizza de marguerita</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/Rectangle 12 (4).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="">Pizza de camarão</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/Rectangle 12 (5).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="">Pizza de marguerita</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+           
+    </main>
+
+
+    <!-- footer -->
+    <footer class="w-100 container-fluid" style="background-color: #544D4D; height: 250px; z-index:1000;">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center mt-5 mb-5" style="color: #ADACAC;">Contato</h3>
+                <ul class="p-0">
+                    <li class="text-center" style="list-style: none;">
+                        <a href="" style="color: #757171;">(00)0000-0000</a>
+                    </li>
+                    <li class="text-center" style="list-style: none;">
+                        <a href="" style="color: #757171;">exemplo@exemplo.com</a>
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center mt-5 mb-3" style="color: #ADACAC;">Siga-nos</h3>
+                <div class="d-flex justify-content-center w-100 mt-5">
+                    <div class="p-3 mr-3 justify-content-center align-items-center d-flex instagram" style="background-color: #333333; border-radius: 5px; width: 90px;">
+                        <svg class="instagram" width="40" height="40" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.1723 0H10.8276C4.85717 0 0 4.85717 0 10.8276V29.1726C0 35.1428 4.85717 39.9999 10.8276 39.9999H29.1726C35.1428 39.9999 39.9999 35.1428 39.9999 29.1726V10.8276C39.9999 4.85717 35.1428 0 29.1723 0V0ZM37.655 29.1726C37.655 33.8497 33.8497 37.655 29.1723 37.655H10.8276C6.1502 37.655 2.34497 33.8497 2.34497 29.1726V10.8276C2.34497 6.1502 6.1502 2.34497 10.8276 2.34497H29.1726C33.8497 2.34497 37.655 6.1502 37.655 10.8276V29.1726Z" />
+                            <path d="M19.9999 9.06274C13.9691 9.06274 9.06277 13.969 9.06277 19.9999C9.06277 26.0308 13.9691 30.9371 19.9999 30.9371C26.0308 30.9371 30.9371 26.0308 30.9371 19.9999C30.9371 13.969 26.0308 9.06274 19.9999 9.06274ZM19.9999 28.5921C15.2624 28.5921 11.4077 24.7378 11.4077 19.9999C11.4077 15.2624 15.2624 11.4077 19.9999 11.4077C24.7378 11.4077 28.5922 15.2624 28.5922 19.9999C28.5922 24.7378 24.7378 28.5921 19.9999 28.5921Z" />
+                            <path d="M31.1987 5.17847C29.4164 5.17847 27.9669 6.62835 27.9669 8.41027C27.9669 10.1925 29.4164 11.6424 31.1987 11.6424C32.9809 11.6424 34.4308 10.1925 34.4308 8.41027C34.4308 6.62805 32.9809 5.17847 31.1987 5.17847ZM31.1987 9.29711C30.7098 9.29711 30.3118 8.89916 30.3118 8.41027C30.3118 7.92108 30.7098 7.52343 31.1987 7.52343C31.6879 7.52343 32.0858 7.92108 32.0858 8.41027C32.0858 8.89916 31.6879 9.29711 31.1987 9.29711Z" />
+                            </svg>
+                    </div>
+                    <div class="p-3 mr-3 justify-content-center align-items-center d-flex facebook" style="background-color: #333333; border-radius: 5px; width: 90px;">
+                        <svg class="facebook" width="21" height="40" viewBox="0 0 21 40" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path class="facebook" d="M16.35 6.64167H20.0017V0.281667C19.3717 0.195 17.205 0 14.6817 0C9.41667 0 5.81 3.31167 5.81 9.39833V15H0V22.11H5.81V40H12.9333V22.1117H18.5083L19.3933 15.0017H12.9317V10.1033C12.9333 8.04833 13.4867 6.64167 16.35 6.64167Z"/>
+                        </svg>
+                    </div>
+                    <div class="p-3 justify-content-center align-items-center d-flex whatsappdiv" style="background-color: #333333; border-radius: 5px; width: 90px;">
+                        <svg class="whatsapp" width="48" height="48" viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d)">
+                        <path d="M24 0C12.9715 0 4 8.97154 4 20C4 23.7623 5.04538 27.4146 7.02846 30.5862C6.23846 33.3538 4.81154 38.5892 4.79615 38.6438C4.72231 38.9146 4.80154 39.2038 5.00385 39.3985C5.20615 39.5931 5.49846 39.6623 5.76462 39.5808L13.6923 37.1423C16.7977 39.0131 20.3538 40 24 40C35.0285 40 44 31.0285 44 20C44 8.97154 35.0285 0 24 0ZM24 38.4615C20.5238 38.4615 17.1377 37.49 14.2069 35.6531C14.0831 35.5754 13.9408 35.5362 13.7985 35.5362C13.7223 35.5362 13.6462 35.5477 13.5723 35.57L6.65 37.7008C7.15846 35.8446 8.07231 32.5246 8.60231 30.6777C8.66385 30.4638 8.62923 30.2331 8.50846 30.0462C6.56538 27.0562 5.53846 23.5823 5.53846 20C5.53846 9.82077 13.8208 1.53846 24 1.53846C34.1792 1.53846 42.4615 9.82077 42.4615 20C42.4615 30.1792 34.1792 38.4615 24 38.4615Z" />
+                        <path  d="M37.0654 24.7124C35.6454 23.9239 34.4362 23.1332 33.5538 22.5562C32.88 22.1162 32.3931 21.7985 32.0362 21.6193C31.0385 21.1216 30.2823 21.4732 29.9946 21.7639C29.9585 21.8001 29.9262 21.8393 29.8985 21.8809C28.8623 23.4355 27.5092 24.9224 27.1131 25.0024C26.6554 24.9309 24.5131 23.7132 22.3838 21.9401C20.21 20.1285 18.8423 18.3939 18.6415 17.2124C20.0362 15.777 20.5385 14.8739 20.5385 13.8462C20.5385 12.787 18.0677 8.3647 17.6208 7.91777C17.1723 7.47008 16.1623 7.40008 14.6185 7.70777C14.47 7.73777 14.3331 7.81085 14.2254 7.91777C14.0385 8.1047 9.66461 12.5639 11.7431 17.9685C14.0246 23.9001 19.8808 30.7947 27.3469 31.9147C28.1954 32.0416 28.9908 32.1047 29.7354 32.1047C34.1277 32.1047 36.72 29.8947 37.45 25.5109C37.5046 25.1901 37.35 24.8701 37.0654 24.7124ZM27.5754 30.3932C19.68 29.2093 14.7069 21.387 13.1792 17.4162C11.6638 13.4778 14.4585 9.96624 15.16 9.17239C15.7308 9.07547 16.3315 9.0347 16.5823 9.07393C17.1062 9.80239 18.92 13.2293 19 13.8462C19 14.2501 18.8685 14.8124 17.3023 16.3793C17.1577 16.5232 17.0769 16.7185 17.0769 16.9232C17.0769 20.9509 25.5723 26.5385 27.0769 26.5385C28.3854 26.5385 30.0915 24.3393 31.0631 22.9062C31.1192 22.9085 31.2138 22.9278 31.3485 22.9955C31.6254 23.1347 32.1054 23.4478 32.7123 23.8447C33.5138 24.3685 34.5785 25.0639 35.8354 25.7847C35.2646 28.5309 33.6692 31.3085 27.5754 30.3932Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS JQUERY e POPPER -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+</body>
+
+</html>
