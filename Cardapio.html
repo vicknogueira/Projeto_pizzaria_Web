@@ -50,36 +50,62 @@
     <!--  Conteudo da pagina -->
 
     <main class="container-fluid position-absolute main-container pt-5"
-        style="border-top-left-radius: 20px;border-top-right-radius: 20px;">
+        style="border-top-left-radius: 20px;border-top-right-radius: 20px; height: 105em;">
+
+        
+        <!--  modal  -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="d-flex justify-content-center align-items-center mt-4 mb-3">
+                  <hr style="width: 20%;"><h1 class="font-roboto" style="font-weight: 100;">Baixe</h1><hr style="width: 20%;">
+                </div>
+                <div class="modal-body">
+                  <p>Para ter o acesso aos melhores serviços da nossa pizzaria, clique em baixar, para fazer o download de nosso aplicativo.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Ir baixar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Cardapio -->
 
 
           <h1 class="text-center mb-5 mt-5">Cardapio</h1>
           <!-- Linha 1 de produtos -->
-          <div class="row mt-3">
+          <div class="row mt-5">
               <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
                     <img src="assets/img/Rectangle 12.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="">Pizza 4 queijos</h2>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Pizza de massa crocante, recheada com 4 queijos</p>
+                        <p>R$ 23,00</p>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
                     <img src="assets/img/Rectangle 12 (1).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="">Pizza de brocólis</h2>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Pizza de brócolis com queijo e catupiry</p>
+                        <p>R$ 25,00</p>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/Rectangle 12 (2).png" class="card-img-top" alt="...">
+                <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/img/Rectangle 12 (6).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="">Pizza de catupiry</h2>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Pizza de catupiry com queijo parmesão</p>
+                        <p>R$ 23,00</p>
                     </div>
                   </div>
               </div>
@@ -87,29 +113,32 @@
           <!-- Linha 2 de produtos -->
           <div class="row mt-5">
               <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
                     <img src="assets/img/Rectangle 12 (3).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="">Pizza de marguerita</h2>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Pizza de marguerita, com queijo muzzarela e tomate</p>
+                        <p>R$ 20,00</p>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
                     <img src="assets/img/Rectangle 12 (4).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2 class="">Pizza de camarão</h2>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Pizza de camarão com queijo parmesão</p>
+                        <p>R$ 27,00</p>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/Rectangle 12 (5).png" class="card-img-top" alt="...">
+                <div class="card" style="width: 18rem;cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/img/chocolate.jpg" style="border-radius: 5px; height: 13em;" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h2 class="">Pizza de marguerita</h2>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h2 class="">Pizza de chocolate</h2>
+                        <p class="card-text">Pizza de chocolate com ganulado e morando</p>
+                        <p>R$ 26,00</p>
                     </div>
                   </div>
               </div>
@@ -117,32 +146,39 @@
           <!-- Linha 3 de produtos -->
           <div class="row mt-5">
               <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/Rectangle 12 (3).png" class="card-img-top" alt="...">
+                <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/img/mm.jpg" style="border-radius: 5px; height: 13em;" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h2 class="">Pizza de marguerita</h2>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h2 class="">Pizza com m&m</h2>
+                      <p class="card-text">Pizza de chocolate nutella com m&m</p>
+                      <p>R$ 30,00</p>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/Rectangle 12 (4).png" class="card-img-top" alt="...">
+                <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/img/coco.jpg" style="border-radius: 5px; " class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h2 class="">Pizza de camarão</h2>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h2 class="">Pizza de chocolate com coco</h2>
+                      <p class="card-text">Pizza de chocolate e coco ralado</p>
+                      <p>R$ 28,00</p>
                     </div>
                   </div>
               </div>
               <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/Rectangle 12 (5).png" class="card-img-top" alt="...">
+                <div class="card" style="width: 18rem; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
+                    <img src="assets/img/pizza-de-chocolate-com.jpg" style="border-radius: 5px; height: 13em;" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h2 class="">Pizza de marguerita</h2>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h2 class="">Pizza de chocolate com banana</h2>
+                      <p class="card-text">Pizza de chocolate nuttella com banda</p>
+                      <p>R$ 27,00</p>
                     </div>
                   </div>
               </div>
+          </div>
+
+          <div class="d-flex justify-content-center mt-5 mb-5">
+            <a href="index.html" class="btn btn-lg btn-warning text-light "style="">Voltar</a>
           </div>
            
     </main>
@@ -150,16 +186,22 @@
 
     <!-- footer -->
 
-    <footer class="w-100 container-fluid" style="background-color: #544D4D; height: 250px; z-index:1000;">
+    <footer class="w-100 container-fluid" style="background-color: #544D4D; height: 250px; z-index:1000; margin-top: 105em;">
         <div class="row">
             <div class="col-md-6">
-                <h3 class="text-center mt-5 mb-5" style="color: #ADACAC;">Contato</h3>
+                <h3 class="text-center mt-5 mb-4" style="color: #ADACAC;">Contato</h3>
                 <ul class="p-0">
                     <li class="text-center" style="list-style: none;">
                         <a href="" style="color: #757171;">(00)0000-0000</a>
                     </li>
                     <li class="text-center" style="list-style: none;">
-                        <a href="" style="color: #757171;">exemplo@exemplo.com</a>
+                        <a href="" style="color: #757171;">(00)0000-0000</a>
+                    </li>
+                    <li class="text-center" style="list-style: none;">
+                        <a href="" style="color: #757171;">pizzaria@exemplo.com</a>
+                    </li>
+                    <li class="text-center" style="list-style: none;">
+                        <a href="" style="color: #757171;">Rua, 000 - São Paulo, SP</a>
                     </li>
                 
                 </ul>
