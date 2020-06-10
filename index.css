@@ -5,6 +5,16 @@ footer{
 h2{
     font-size: 20px;
 }
+.list-group-item{
+    background-color: #2D323E!important;
+}
+.list-group-item:hover{
+    background-color: #ee5a24!important;
+}
+.list-group-item:focus{
+    border-color: #ee5a24!important;
+    background-color: #ee5a24!important;
+}
 /* Estilo do <main> */
 .main-container{
     margin-top: -17px;
@@ -30,3 +40,9 @@ h2{
     fill: #3131c3!important;
     cursor: pointer;
 }
+.botaoDeletar:hover .delete{
+    visibility: visible!important;
+    width: 100%;
+    filter: drop-shadow(0px 1px 9px #EE5A24);
+}
+

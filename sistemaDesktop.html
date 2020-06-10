@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-PizzaFlavor</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="imagem/png" href="assets/img/pizza.svg" />
+</head>
+<body>
+    <main class="">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Tem certeza que deseja deletar?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Se você deletar esse produtoo não será possivel recuperá-lo
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sim</button>
+              <button type="button" class="btn btn-danger">Não</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Navbar -->
+        <nav class="d-flex align-items-center" style="background-color: #2D323E;height: 90px;">
+            <a href="sistemaDesktop.html" class="text-light ml-3" style="font-size: 40px;">PizzaFlavor</a>
+
+            <div class="d-flex" style="width: 68%; margin-left: 6em;">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.1908 3.15141C14.0468 3.15141 14.7472 2.45103 14.7472 1.59499C14.7472 0.738963 14.0468 0.0385742 13.1908 0.0385742C12.9573 0.0385742 12.8017 0.194216 12.8017 0.427679C12.8017 0.661142 12.9573 0.816784 13.1908 0.816784C13.6188 0.816784 13.969 1.16698 13.969 1.59499C13.969 2.02301 13.6188 2.3732 13.1908 2.3732C12.3347 2.3732 11.6344 3.07359 11.6344 3.92962C11.5954 4.78566 12.2958 5.48604 13.1908 5.48604C13.4242 5.48604 13.5799 5.3304 13.5799 5.09694C13.5799 4.86348 13.4242 4.70783 13.1908 4.70783C12.7628 4.70783 12.4126 4.35764 12.4126 3.92962C12.4126 3.50161 12.7628 3.15141 13.1908 3.15141Z" fill="#EE5A24"/>
+                    <path d="M16.2647 3.11284C17.1207 3.11284 17.8211 2.41245 17.8211 1.55642C17.8211 0.700389 17.1207 0 16.2647 0C16.0312 0 15.8756 0.155642 15.8756 0.389105C15.8756 0.622568 16.0312 0.77821 16.2647 0.77821C16.6927 0.77821 17.0429 1.1284 17.0429 1.55642C17.0429 1.98444 16.6927 2.33463 16.2647 2.33463C15.4086 2.33463 14.7083 3.03502 14.7083 3.89105C14.7083 4.74708 15.4086 5.44747 16.2647 5.44747C16.4981 5.44747 16.6538 5.29183 16.6538 5.05837C16.6538 4.8249 16.4981 4.66926 16.2647 4.66926C15.8367 4.66926 15.4865 4.31907 15.4865 3.89105C15.4865 3.46303 15.8367 3.11284 16.2647 3.11284Z" fill="#EE5A24"/>
+                    <path d="M29.2608 20.3502H25.9924V16.6926H28.0157C28.2492 16.6926 28.4048 16.537 28.4048 16.3035V11.8288C28.4048 11.5953 28.2492 11.4397 28.0157 11.4397H27.004V7.39301C27.004 7.15955 26.8484 7.00391 26.6149 7.00391H1.75112C1.51766 7.00391 1.36201 7.15955 1.36201 7.39301V11.8288C1.36201 12.0623 1.51766 12.2179 1.75112 12.2179H2.76279V15.8755H0.739447C0.505984 15.8755 0.350342 16.0311 0.350342 16.2646V20.7004C0.350342 20.9339 0.505984 21.0895 0.739447 21.0895H4.00793V24.7471H2.37369C2.14022 24.7471 1.98458 24.9027 1.98458 25.1362V29.6109C1.98458 29.8444 2.14022 30 2.37369 30H27.2375C27.471 30 27.6266 29.8444 27.6266 29.6109V25.5642H29.2608C29.4943 25.5642 29.6499 25.4086 29.6499 25.1751V20.7393C29.6499 20.5059 29.4554 20.3502 29.2608 20.3502ZM27.6266 12.2179V15.8755H3.541V12.2179H26.576H27.6266ZM2.14022 11.4397V7.78212H26.1869V11.4397H3.1519H2.14022ZM1.12855 20.3502V16.6926H25.1752V20.3502H1.12855ZM26.8484 29.2218H2.76279V25.5642H4.35812C4.35812 25.5642 4.35812 25.5642 4.39703 25.5642H26.8484V29.2218ZM28.8717 24.786H27.2375C27.2375 24.786 27.2375 24.786 27.1986 24.786H4.82505V21.1284H28.8717V24.786Z" fill="#EE5A24"/>
+                </svg>
+                <h3 class="font-inherit ml-2" style="color: #EE5A24; font-weight: 100;">Produtos</h3>
+            </div>
+            <div>
+                <a type="button" href="adicionarProduto.html" style="background-image: url(assets/img/plus1.svg); background-color: #EE5A24; width: 110px; height: 40px; background-repeat: no-repeat; background-position-y: 10px; background-position-x:10px; text-align: end;" class="btn text-light">Produto</a>
+            </div>
+        </nav>
+        <article style="float: left; background-color: #2D323E; width: 15em; height: 35.46em;">
+            <div class="list-group" style="background-color: #2D323E;">
+                <a href="#" class="list-group-item list-group-item-action text-light" style="background-color: #EE5A24!important;"> 
+                    Produtos
+                </a>
+                <a href="promocoesProduto.html" class="list-group-item list-group-item-action text-light">Promoções</a>
+                <a href="#" class="list-group-item list-group-item-action text-light">Pedidos</a>
+              </div>
+        </article>
+        <aside class="w-100" style="background-color: #4A4F5B;height: 60px;">
+            <div class="form-group d-flex align-items-center" style="height: 60px;">
+                <input type="text" class="form-control w-50 ml-3" placeholder="Buscar produto...">
+                <div class="d-flex align-items-center ml-4" style="height: 60px; cursor: pointer">
+                    <img src="assets/img/filter 1.svg"  alt="">
+                    <p class="pt-3 pl-2" style="color: #EE5A24;">Filtros</p>
+                </div>
+                <div class="w-50 d-flex justify-content-end mr-2" style="cursor: pointer">
+                    <img src="assets/img/List icon.svg"class="mr-2" alt="">
+                    <img src="assets/img/Grid icon.svg" alt="">
+                </div>
+            </div>
+           
+        </aside>
+        <a  href="editarProduto.html" style="text-decoration: none;" class="d-flex m-3 text-dark">
+            <div class="card ml-5 w-100" style="max-width: 540px; cursor: pointer;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="assets/img/Rectangle 12 (2).png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body botaoDeletar">
+                      <h5 class="card-title mb-0">Pizza 4 queijos</h5>
+                      <p class="card-text mb-0">Pizza de massa crocante, recheada com 4 queijos</p>
+                      <div class="d-flex justify-content-between" style="height: 10px;">
+                        <p class="card-text pt-2"><small class="text-muted">Cadastrado em 02/05/20</small></p>
+                        <div class="d-flex justify-content-around w-50 pt-2">
+                            <p>R$23,00</p>
+                            
+                            <svg class="delete" style="visibility: hidden;"  width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="11" fill="#EE5A24"/>
+                                <path d="M14.5695 7.30859L13.8044 16.0267H8.19557L7.43066 7.30859L6.46143 7.39355L7.2403 16.2698C7.28129 16.6789 7.63628 16.9997 8.04866 16.9997H13.9514C14.3636 16.9997 14.7187 16.6791 14.7604 16.264L15.5388 7.39355L14.5695 7.30859Z" fill="white"/>
+                                <path d="M12.7839 5H9.21634C8.76924 5 8.40552 5.36373 8.40552 5.81082V7.35137H9.37848V5.97296H12.6217V7.35134H13.5947V5.8108C13.5947 5.36373 13.231 5 12.7839 5Z" fill="white"/>
+                                <path d="M16.1893 6.86475H5.81095C5.54224 6.86475 5.32446 7.08253 5.32446 7.35124C5.32446 7.61995 5.54224 7.83773 5.81095 7.83773H16.1893C16.458 7.83773 16.6758 7.61995 16.6758 7.35124C16.6758 7.08253 16.458 6.86475 16.1893 6.86475Z" fill="white"/>
+                            </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </a>
+        <a  href="editarProduto.html" style="text-decoration: none;" class="d-flex m-3 text-dark">
+            <div class="card ml-5 w-100 botaoDeletar" style="max-width: 540px; cursor: pointer;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="assets/img/Rectangle 12 (3).png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Pizza de camarão</h5>
+                      <p class="card-text mb-0">Pizza de camarão com queijo parmesão</p>
+                      <div class="d-flex justify-content-between" style="height: 10px;">
+                        <p class="card-text pt-3"><small class="text-muted">Cadastrado em 02/05/20</small></p>
+                        <div class="d-flex justify-content-around w-50 pt-3">
+                            <p>R$27,00</p>
+                            <svg class="delete" style="visibility: hidden;" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="11" fill="#EE5A24"/>
+                                <path d="M14.5695 7.30859L13.8044 16.0267H8.19557L7.43066 7.30859L6.46143 7.39355L7.2403 16.2698C7.28129 16.6789 7.63628 16.9997 8.04866 16.9997H13.9514C14.3636 16.9997 14.7187 16.6791 14.7604 16.264L15.5388 7.39355L14.5695 7.30859Z" fill="white"/>
+                                <path d="M12.7839 5H9.21634C8.76924 5 8.40552 5.36373 8.40552 5.81082V7.35137H9.37848V5.97296H12.6217V7.35134H13.5947V5.8108C13.5947 5.36373 13.231 5 12.7839 5Z" fill="white"/>
+                                <path d="M16.1893 6.86475H5.81095C5.54224 6.86475 5.32446 7.08253 5.32446 7.35124C5.32446 7.61995 5.54224 7.83773 5.81095 7.83773H16.1893C16.458 7.83773 16.6758 7.61995 16.6758 7.35124C16.6758 7.08253 16.458 6.86475 16.1893 6.86475Z" fill="white"/>
+                            </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </a>
+        <a  href="editarProduto.html" style="text-decoration: none;" class="d-flex m-3 text-dark">
+            <div class="card ml-5 w-100 botaoDeletar" style="max-width: 540px; cursor: pointer;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="assets/img/Rectangle 12 (4).png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title mb-0">Pizza de marguerita</h5>
+                      <p class="card-text mb-0">Pizza de marguerita, com queijo muzzarela e tomate</p>
+                      <div class="d-flex justify-content-between" style="height: 10px;">
+                        <p class="card-text pt-2"><small class="text-muted">Cadastrado em 02/05/20</small></p>
+                        <div class="d-flex justify-content-around w-50 pt-2">
+                            <p>R$20,00</p>
+                            <svg class="delete" style="visibility: hidden;" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="11" fill="#EE5A24"/>
+                                <path d="M14.5695 7.30859L13.8044 16.0267H8.19557L7.43066 7.30859L6.46143 7.39355L7.2403 16.2698C7.28129 16.6789 7.63628 16.9997 8.04866 16.9997H13.9514C14.3636 16.9997 14.7187 16.6791 14.7604 16.264L15.5388 7.39355L14.5695 7.30859Z" fill="white"/>
+                                <path d="M12.7839 5H9.21634C8.76924 5 8.40552 5.36373 8.40552 5.81082V7.35137H9.37848V5.97296H12.6217V7.35134H13.5947V5.8108C13.5947 5.36373 13.231 5 12.7839 5Z" fill="white"/>
+                                <path d="M16.1893 6.86475H5.81095C5.54224 6.86475 5.32446 7.08253 5.32446 7.35124C5.32446 7.61995 5.54224 7.83773 5.81095 7.83773H16.1893C16.458 7.83773 16.6758 7.61995 16.6758 7.35124C16.6758 7.08253 16.458 6.86475 16.1893 6.86475Z" fill="white"/>
+                            </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </a>
+        
+    </main>
+</body>
+</html>
