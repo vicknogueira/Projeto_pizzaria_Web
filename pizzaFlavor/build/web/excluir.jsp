@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +11,59 @@
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="index.css">
         <link rel="icon" type="imagem/png" href="assets/img/pizza.svg" />
+        
+        <style>
+            footer{
+            position: relative;
+            margin-top: 105rem;
+        }
+        h2{
+            font-size: 20px;
+        }
+        .list-group-item{
+            background-color: #2D323E!important;
+        }
+        .list-group-item:hover{
+            background-color: #ee5a24!important;
+        }
+        .list-group-item:focus{
+            border-color: #ee5a24!important;
+            background-color: #ee5a24!important;
+        }
+        /* Estilo do <main> */
+        .main-container{
+            margin-top: -17px;
+            background-color: #f9f9f9;
+            width: 100%;
+            height: 105em;
+        }
+
+        /* Estilo dos svg de redes sociais */
+
+        .instagram:hover{
+            fill: rgb(185, 58, 179)!important;
+            cursor: pointer;
+        }
+        .whatsappdiv:hover{
+            cursor: pointer;
+        }
+        .whatsapp:hover{
+            fill: greenyellow!important;
+            cursor: pointer;
+        }
+         .facebook:hover{
+            fill: #3131c3!important;
+            cursor: pointer;
+        }
+        .botaoDeletar:hover .delete{
+            visibility: visible!important;
+            width: 100%;
+            filter: drop-shadow(0px 1px 9px #EE5A24);
+        }
+
+
+        </style>
 </head>
 <body>
     <main class="">
@@ -40,32 +92,28 @@
 
         <section class="m-3">
             <div class="row d-flex">
-                   <div class="col-md-6">
+                <form action="executaExcluir.jsp" method="post" class="col-md-6">
                         <h3 class="ml-3">Editar dados</h3>
                         <div class="form-group ml-3">
+                            <label for="">Codigo</label>
+                            <input type="text" name="id" value="<%=request.getParameter("id") %>" class="form-control" placeholder="Preço do produto">
+                        </div>
+                        <div class="form-group ml-3">
                             <label for="">Nome do produto</label>
-                            <input type="text" class="form-control" placeholder="Nome do produto">
+                            <input type="text"name="nome" value="<%=request.getParameter("nome") %>" class="form-control" placeholder="Nome do produto">
                         </div>
                         <div class="form-group ml-3">
                             <label for="">Descrição</label>
-                            <textarea type="text" class="form-control" placeholder="Descrição do produto"></textarea>
-                        </div>
-                        <div class="form-group ml-3">
-                            <label for="">Preço</label>
-                            <input type="text" class="form-control" placeholder="Preço do produto">
-                        </div>
-                        <div class="form-group ml-3" style="background-color: honeydew;">
-                            <div class="d-flex justify-content-start">
-                                <button class="btn btn-info">Escolher imagem</button>
-                            </div>
+                            <textarea type="text" value="<%=request.getParameter("descricao") %>" name="descricao" class="form-control" placeholder="Descrição do produto"></textarea>
                         </div>
                         <div class="form-group ml-3 mt-5" style="background-color: honeydew;">
                             <div class="d-flex justify-content-start">
-                                <a href="sistemaDesktop.html" class="btn btn-info mr-3 w-50" style="background-color: #ababab; border: 0;">Cancelar</a>
-                                <a type="button" style="background-image: url(assets/img/plus2.svg); background-color: #EE5A24; height: 40px; background-repeat: no-repeat; background-position-y: 10px; background-position-x:10px; " class="btn text-light w-50">Salvar</a>
+                                <button href="sistemaDesktop.html" class="btn btn-info mr-3 w-50" style="background-color: #ababab; border: 0;">Cancelar</button>
+                                <button type="submit" style="background-image: url(assets/img/plus2.svg); background-color: #EE5A24; height: 40px; background-repeat: no-repeat; background-position-y: 10px; background-position-x:10px; " class="btn btn-danger text-light w-50">Excluir</button>
 
                             </div>
                         </div>
+                </form>
                    </div>
                    <div class="col-md-6">
                         <div class="form-group ml-3">
